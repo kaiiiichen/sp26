@@ -46,11 +46,11 @@ Below is a high-level “typical week in the course” for {{site.semester}}.
 
 | Mo | Tu | We | Th | Fr |
 | --- | --- | --- | --- | --- | 
-|  | <span style="color:Green">Live Lecture</span> |  | <span style="color:Green">Live Lecture</span> |  |
-|  | <span style="color:Blue">Discussion Section</span> | <span style="color:Blue">Discussion Section</span> |  |  |
+|  | <span style="color: var(--syllabus-lecture)">Live Lecture</span> |  | <span style="color: var(--syllabus-lecture)">Live Lecture</span> |  |
+|  | <span style="color: var(--syllabus-discussion)">Discussion Section</span> | <span style="color: var(--syllabus-discussion)">Discussion Section</span> |  |  |
 | Office Hours |  | Office Hours | Office Hours | Office Hours |
-|  |  |  | <span style="color:#c91d1d">Homework N released</span> <br> <span style="color: #c91d1d">**Homework N-1 due**</span> |  |
-|  |  | <span style="color:#c91d1d">**Lab N-1 due**</span> | <span style="color:#c91d1d">Lab N released</span> |  |
+|  |  |  | <span style="color: var(--syllabus-deadline)">Homework N released</span> <br> <strong style="color: var(--syllabus-deadline)">Homework N-1 due</strong> |  |
+|  |  | <strong style="color: var(--syllabus-deadline)">Lab N-1 due</strong> | <span style="color: var(--syllabus-deadline)">Lab N released</span> |  |
 
 
 - **All deadlines are subject to change.**
