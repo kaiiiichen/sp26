@@ -18,18 +18,20 @@ UC Berkeley, Spring 2026
 [Office Hours](https://oh.ds100.org/){:target="_blank" .btn .btn-officehours .mr-1}
 [Lectures Playlist](https://www.youtube.com/playlist?list=PLQCcNQgUcDfopoa1txbWmAOIrZyx0XoZ7){:target="_blank" .btn .btn-lectures .mr-1}
 
-<div>
+<!-- Commented out due to accessibility issues -->
+<!-- <div>
 {% assign instructors = site.staffers | where: 'role', 'Instructor' | sort: 'order' %}
   <div class="role">
     {% for staffer in instructors %}
     {{ staffer }}
     {% endfor %}
   </div>
-</div>
+</div> -->
 
+<!-- Also causing accessibility issues -->
 <!-- Uncomment if you'd like to use announcements! -->
-{% assign announcement = site.announcements | last %}
-{{ announcement }}
+<!-- {% assign announcement = site.announcements | last %}
+{{ announcement }} -->
 
 
 # Schedule
