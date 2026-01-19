@@ -47,20 +47,20 @@ Below is a high-level “typical week in the course” for {{site.semester}}.
 | Mo | Tu | We | Th | Fr |
 | --- | --- | --- | --- | --- | 
 |  | <span style="color: var(--syllabus-lecture)">Live Lecture</span> |  | <span style="color: var(--syllabus-lecture)">Live Lecture</span> |  |
-|  | <span style="color: var(--syllabus-discussion)">Discussion Section</span> | <span style="color: var(--syllabus-discussion)">Discussion Section</span> |  |  |
-| Office Hours |  | Office Hours | Office Hours | Office Hours |
-|  |  |  | <span style="color: var(--syllabus-deadline)">Homework N released</span> <br> <strong style="color: var(--syllabus-deadline)">Homework N-1 due</strong> |  |
-|  |  | <strong style="color: var(--syllabus-deadline)">Lab N-1 due</strong> | <span style="color: var(--syllabus-deadline)">Lab N released</span> |  |
+|  | | <span style="color: var(--syllabus-discussion)">Discussion Section</span> | <span style="color: var(--syllabus-discussion)">Discussion Section</span> |  |
+| Office Hours | Office Hours | Office Hours | Office Hours | Office Hours |
+|  |  |  | <span style="color: var(--syllabus-deadline)">Homework N released</span> | <strong style="color: var(--syllabus-deadline)">Homework N-1 due</strong> |
+|  | <strong style="color: var(--syllabus-deadline)">Lab N-1 due</strong> | | <span style="color: var(--syllabus-deadline)">Lab N released</span> |  |
 
 
 - **All deadlines are subject to change.**
-- The Office Hours schedule is on the [Calendar page](../calendar).
+- The Office Hours schedule is on the [Calendar page](../calendar_dynamic).
 - Lectures, discussions, assignments, projects, and exams are scheduled on the [Home page](..).
 
 
 ### Lecture
 
-There are 2 live **lectures** held on Tuesdays and Thursdays, 11:00am-12:30pm, hybrid: in-person in Wheeler 150 and broadcasted live on Zoom. All session recordings, slides, activities, and examples should be uploaded to the course website within 24 hours of the lecture. 
+There are 2 live **lectures** held on Tuesdays and Thursdays, 3:30pm-5:00pm, hybrid: in-person in Wheeler 150 and broadcasted live on Zoom. All session recordings, slides, activities, and examples should be uploaded to the course website within 24 hours of the lecture. 
 
 **Lecture participation**: While synchronous lecture attendance (in-person or through Zoom) is not mandatory, we expect you to "participate" in lecture by answering lecture poll questions in one of two ways: (1) synchronously during the lecture as poll questions are launched; or (2) asynchronously using a link provided after lecture.
 
@@ -73,7 +73,7 @@ There are 2 live **lectures** held on Tuesdays and Thursdays, 11:00am-12:30pm, h
 
 ### Discussion
 
-Live **discussion sections** are one hour long, and held once a week on Tuesday or Wednesday. The goal of these TA-led sessions is to work through problems, hone your skills, and flesh out your understanding as part of a team. The problems that you solve and present as part of discussion are important in understanding course material. 
+Live **discussion sections** are one hour long, and held once a week on Wednesday or Thursday. The goal of these TA-led sessions is to work through problems, hone your skills, and flesh out your understanding as part of a team. The problems that you solve and present as part of discussion are important in understanding course material. 
 
 The lectures, assignments, and exams of this course are structured with the **expectation that all students complete the tasks in the discussion worksheet, either by attending section or on their own time.** The content covered in these sections is designed to solidify understanding of key lecture concepts and prepare students for homework assignments. It is to your benefit to actively participate in all discussions.
 
@@ -89,7 +89,7 @@ If you are enrolled in Data 100, you have 2 options:
 - **"No Discussion" Grading Scheme:** Instead, the 5% discussion weight will be redistributed to the assignments category. If you choose this option you will not be assigned to a discussion section.
 
 {: .note }
-> You can switch from the graded discussion option to the non-graded discussion option after the [Pre-Semester Survey](https://docs.google.com/forms/d/e/1FAIpQLSdrDoPwGUv3ShWYtP0_4UKQ8D3jp1xCx6MO9qfGRaPky-hgYA/viewform?usp=header){:target="_blank"} is due (August 30, 2025 at 11:59 PM) and before September 4, 2025, so you are able to attend one discussion to gauge your interest. To do so, please make a private Ed post. You cannot switch from graded to non-graded after September 4, 2025. If you are unable to submit the form on time, we will assume you have opted for the non-graded discussion option.
+> You can switch from the graded discussion option to the non-graded discussion option after the [Pre-Semester Survey TBA](){:target="_blank"} is due (January 22, 2026 at 11:59 PM). You cannot switch from graded to non-graded after February 13, 2026. If you are unable to submit the form on time, we will assume you have opted for the non-graded discussion option.
 
 Students are not permitted to switch between the two grading schemes once finalized. However, if you would like to attend discussion at a later point in the semester, please reach out to us privately via Ed, and we may be able to accommodate you.
 
@@ -120,13 +120,14 @@ Please refer to [Grading Scheme](#grading-scheme) for a comprehensive grade brea
 
 ### Exams
 
-There are three exams in this course:
+There are four exams in this course:
 
 {: .important}
 
-> - **Computer-Based Midterm 1** ON **Wed, October 15** OR **Thu, October 16** OR **Fri, October 17** (You will sign up for a 1-hour slot)
-> - **Computer-Based Midterm 2** ON **Wed, November 19** OR **Thu, November 20** OR **Fri, November 21** (You will sign up for a 1-hour slot)
-> - **Paper-Based Final** ON **Wednesday, December 17** FROM **8:00am-11:00am** (3 hours)
+> - **Computer-Based Midterm 1** ON **Mon, March 9** OR **Tue, March 10** OR **Wed, March 11** OR **Thu, March 12** (You will sign up for a 1-hour slot)
+> - **Computer-Based Midterm 2** ON **Tue, Apr 7** OR **Wed, Apr 8** OR **Wed, Apr 9** (You will sign up for a 1-hour slot)
+> - **Paper-Based Midterm 3** ON **Thursday, April 30** (1-hour)
+> - **Paper-Based Final** ON **Thursday, May 14** STARTING AT **11:30am**
 
 We will administers the midterms in a computer-based testing facility on campus. More information will be provided shortly after the semester begins, including instructions for students with DSP accommodations.
 
@@ -147,7 +148,7 @@ We want to enable everyone to succeed in this course. We encourage you to discus
 
 Course Communication:
 
-- **EdStem**, or **Ed** for short, is our course forum this semester. **_All course announcements will be through Ed._** We are not using bCourses this semester. Please check out [Ed](https://edstem.org/us/courses/83980){:target="_blank"} or the [FAQ](https://ds100.org/faqs/fa25/){:target="_blank"} page first before emailing course staff directly.
+- **EdStem**, or **Ed** for short, is our course forum this semester. **_All course announcements will be through Ed._** We are not using bCourses this semester. Please check out [Ed](https://edstem.org/us/courses/93833){:target="_blank"} or the [FAQ](https://ds100.org/faqs/sp26/){:target="_blank"} page first before emailing course staff directly.
 
     - Ed is a formal, academic space. We must demonstrate appropriate respect, consideration, and compassion for others. Please be friendly and thoughtful; our community draws from a wide spectrum of valuable experiences. For further reading, please reference [Berkeley’s Principles of Community](https://diversity.berkeley.edu/principles-community){:target="_blank"} and the [Berkeley Campus Code of Student Conduct](https://conduct.berkeley.edu/code-of-conduct/){:target="_blank"}.
     - Ed is your primary platform for asking questions about the class. It is monitored daily by course staff, so questions posted to Ed will likely receive the fastest response.
@@ -169,8 +170,9 @@ Course Communication:
 | Labs | 5% | 5% |  - |  5% | Drop 2 lowest scores |
 | Discussions | 5% | - | - | - | Drop 3 lowest scores |
 | Lecture Participation | 5% | 5% | 5% | 5% | Drop 3 lowest scores |
-| Midterm 1 | 10% | 10% | 10% | - | |
-| Midterm 2 | 10% | 10% | 10% | - | |
+| Midterm 1 | 6.66% | 6.66% | 6.66% | - | |
+| Midterm 2 | 6.66% | 6.66% | 6.66% | - | |
+| Midterm 3 | 6.66% | 6.66% | 6.66% | - | |
 | Final | 30% | 30% | 30% | - | |
 | Graduate Final Project| - | - | 15% | 35% | |
 
@@ -185,7 +187,7 @@ While we do not have homework drops this semester, we will offer slip days for h
 
 ### On-Time Submission
 
-All assignments are due at **_11:59 PM Pacific Time_** on the due date specified on the [Home / Schedule](..) page. The date and time of this deadline are firm. Submitting even a minute past is considered late.
+All assignments are due at **_11:59 PM Pacific Time_** on the due date specified on the [Schedule](..) page. The date and time of this deadline are firm. Submitting even a minute past is considered late.
 
 
 ### Slip Days
@@ -223,7 +225,7 @@ You are responsible for reasonable communication with course staff. If you make 
 
 ### Regrade Requests
 
-Students will be allowed to submit regrade requests for the autograded and written portions of assignments in cases in which the rubric was incorrectly applied or the autograder scored their submission incorrectly. Regrades for the written portions of assignments will be handled through the grading portal, and autograder regrades via a [Google Form](){:target="_blank"}. The deadline for regrade requests (autograded and written) is one week after the grades are released for the corresponding assignment.
+Students will be allowed to submit regrade requests for the autograded and written portions of assignments in cases in which the rubric was incorrectly applied or the autograder scored their submission incorrectly. Regrades for the written portions of assignments will be handled through the grading portal, and autograder regrades via a [Google Form](https://forms.gle/br8ShTbU7HWw1ooQ9){:target="_blank"}. The deadline for regrade requests (autograded and written) is one week after the grades are released for the corresponding assignment.
 
 **Always check that the autograder executes correctly!** The grading portal will show you the output of the public tests, and you should see the same results as you did on DataHub. If you see a discrepancy, ensure that you have exported the assignment correctly and, if there is still an issue, post on Ed _as soon as possible_.
 
@@ -264,7 +266,7 @@ When a grader identifies a suspected inappropriate use of an LLM, it is document
 
 **Exams:** Cheating on exams is a serious offense. We have methods of detecting cheating on exams – so don’t do it! Students caught cheating on any exam will fail the course.
 
-Plagiarism or inappropriate use of LLMs on any assignment, as well as other violations to Berkeley’s [Code of Conduct](https://sa.berkeley.edu/code-of-conduct){:target="_blank"}, will be reported to the Center for Student Conduct. The CSC treats most first-time offenses as a [Non-Reportable Warning](https://conduct.berkeley.edu/wp-content/uploads/2024/01/Academic-Misconduct-Resource-Sheet-for-Students-UPDATED.pdf){:target="_blank"}. Additionally we reserve the right to give you a negative full score (-100%) or lower on the assignments in question, an F in the course, or even dismissal from the university. It’s just not worth it!
+Plagiarism or inappropriate use of LLMs on any assignment, as well as other violations to Berkeley’s [Code of Conduct](https://conduct.berkeley.edu/code-of-conduct/){:target="_blank"}, will be reported to the Center for Student Conduct. The CSC treats most first-time offenses as a [Non-Reportable Warning](https://conduct.berkeley.edu/wp-content/uploads/2024/01/Academic-Misconduct-Resource-Sheet-for-Students-UPDATED.pdf){:target="_blank"}. Additionally we reserve the right to give you a negative full score (-100%) or lower on the assignments in question, an F in the course, or even dismissal from the university. It’s just not worth it!
 
 Rather than copying someone else’s work, ask for help. You are not alone in Data 100! The entire staff is here to help you succeed. We expect that you will work with integrity and with respect for other members of the class, just as the course staff will work with integrity and respect for you.
 
@@ -342,4 +344,4 @@ Finally, the main goal of this course is that you should learn and have a fantas
 
 ## Acknowledgments
 
-Academic Honesty policy and closing words adapted from [Data 8](https://data8.org/){:target="_blank"}. Course Culture inspired and adapted with permission from Dr. Sarah Chasins’ [Fall 2021 CS 164 Syllabus](https://inst.eecs.berkeley.edu/~cs164/fa21/syllabus.html){:target="_blank"} and Grace O’Connell, the Asssociate Dean for Inclusive Excellence.
+Academic Honesty policy and closing words adapted from [Data 8](https://www.data8.org/){:target="_blank"}. Course Culture inspired and adapted with permission from Dr. Sarah Chasins’ [Fall 2021 CS 164 Syllabus](https://inst.eecs.berkeley.edu/~cs164/fa21/syllabus.html){:target="_blank"} and Grace O’Connell, the Asssociate Dean for Inclusive Excellence.
