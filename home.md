@@ -24,7 +24,7 @@ UC Berkeley, Spring 2026
 {{ announcement }} -->
 
 
-# Calendar
+# Schedule
 
 <div>
 {%- include schedule.html -%}
