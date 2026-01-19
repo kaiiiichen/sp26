@@ -1,8 +1,8 @@
 ---
 name: Ramesh Sridharan
 role: Instructor
-email: ramesh_s
+email: data100.instructors@berkeley.edu
 website:
 photo: ramesh.jpg
-pronouns: he/him
+pronouns: he/him/his
 ---

@@ -19,8 +19,8 @@ extra_days_col2:
   - date: 2026-04-30
     title: "Midterm 3 (Paper)"
     label: exam
-  - date: 2026-05-15
-    title: Final 7-10 P
+  - date: 2026-05-14
+    title: Final (11:30 AM - 2:30 PM)
     label: exam
   - date: 2026-01-21
     title: "Lab 1: Prerequisite Coding"
