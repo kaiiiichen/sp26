@@ -65,7 +65,7 @@ There are 2 live **lectures** held on Tuesdays and Thursdays, 3:30pm-5:00pm, hyb
 **Lecture participation**: While synchronous lecture attendance (in-person or through Zoom) is not mandatory, we expect you to "participate" in lecture by answering lecture poll questions in one of two ways: (1) synchronously during the lecture as poll questions are launched; or (2) asynchronously using a link provided after lecture.
 
 - Lecture participation is graded using poll responses on a 0/1 basis.
-  - Synchronous Participation: complete **at least one** participation poll question during the live lecture timeslot (11:00am-12:30pm, Tuesdays and Thursdays). As long as you submit a response to at least one poll question in this timeframe, you will receive synchronous attendance credit.
+  - Synchronous Participation: complete **at least one** participation poll question during the live lecture timeslot (3:30pm-5:00pm, Tuesdays and Thursdays). As long as you submit a response to at least one poll question in this timeframe, you will receive synchronous attendance credit.
   - Asynchronous Participation: complete **all** participation poll questions from the link provided on the course website within one week of the corresponding lecture.
   - In both cases, participation is graded on completion, not correctness.
 - See the [Policies](#policies) section for lecture participation drops.
@@ -77,14 +77,14 @@ Live **discussion sections** are one hour long, and held once a week on Wednesda
 
 The lectures, assignments, and exams of this course are structured with the **expectation that all students complete the tasks in the discussion worksheet, either by attending section or on their own time.** The content covered in these sections is designed to solidify understanding of key lecture concepts and prepare students for homework assignments. It is to your benefit to actively participate in all discussions.
 
-Each week, we will provide a conceptual review covering the topics pertinent to the discussion worksheet on a YouTube playlist TBA. Slides for the content review are linked TBA. **We expect you watch the content review before your discussion section.** Discussion sections will not include any content review, they will solely be focused on problem-solving and Q&A.
+Each week, we will provide a mini-lecture covering the topics pertinent to the discussion worksheet on a YouTube playlist TBA. Slides for the content review are linked TBA. **We expect you watch the mini-lecture before your discussion section.** Discussion sections will not include any content review, they will solely be focused on problem-solving and Q&A.
 
 {: .important }
 > This semester, we are offering two different grading schemes - graded versus ungraded discussion attendance. After the first week of the course, students will need to choose between the two grading schemes. Students who choose the Graded Discussion are assigned to a discussion slot based on their availability. Discussion attendance will be recorded starting with the second week of class. Please note that discussion attendance is not mandatory for students enrolled in Data 200 and Data 200S.
 
 If you are enrolled in Data 100, you have 2 options:
 - **Graded Discussion:** Discussion attendance will be recorded each week and account for 5% of the overall grade. Each weekly discussion will be graded on a 0/1 basis. You will only get credit for attending the discussion section that you are signed up for.
-    - Online sections, if offered, are reserved for students with specific needs (e.g., DSP, Data 200S, etc.); these can be requested through the Pre-Semester and Discussion Selection Form.
+    - Online sections, if offered, are reserved for students with specific needs (e.g., DSP, Data 200S, etc.); these can be requested through the [Pre-Semester Survey](https://forms.gle/pL1Te33T7cddv3wV9){:target="_blank"}.
     - All students are automatically granted 3 discussion attendance drops to use for illness, personal emergencies, or for other accommodations. These drops are designed to account for unexpected events. In other words, you should not plan to use them.
 - **"No Discussion" Grading Scheme:** Instead, the 5% discussion weight will be redistributed to the assignments category. If you choose this option you will not be assigned to a discussion section.
 

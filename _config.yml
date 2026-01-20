@@ -30,7 +30,7 @@ comms_email: data100.support@berkeley.edu
 gradescope_course_id: 123456 
 bcourses_course_id: 1551658 
 ed_course_id: 123456
-sememster: Spring 2026
+semester: Spring 2026
 
 course_logo_path: assets/branding/panda-logo.png
 # This should be one of eecs, dsus, stat
