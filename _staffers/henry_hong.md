@@ -2,7 +2,7 @@
 name: Henry Hong
 role: Tutor
 email: hhong@berkeley.edu
-photo: Henry_Hong.png
+photo: henry_hong.png
 pronouns: He/Him/His
 website: https://henryyhong.github.io/
 ---
