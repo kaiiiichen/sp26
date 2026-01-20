@@ -11,16 +11,16 @@ end_date: 2026-05-15
 # like exams or bonus lectures) can be listed here. These appear in the second column.
 extra_days_col2:
   - date: 2026-03-09
-    title: "Midterm 1 (CBTF, M-Th)"
+    title: "Midterm 1 (<a href=\"./syllabus/#exams\">CBTF</a>, Monday-Thursday)"
     label: exam
   - date: 2026-04-07 
-    title: "Midterm 2 (CBTF, Tu-Th)"
+    title: "Midterm 2 (<a href=\"./syllabus/#exams\">CBTF</a>, Tuesday-Thursday)"
     label: exam
   - date: 2026-04-30
-    title: "Midterm 3 (Paper)"
+    title: "Midterm 3 (<a href=\"./syllabus/#exams\">Paper</a>)"
     label: exam
   - date: 2026-05-14
-    title: Final (11:30 AM - 2:30 PM)
+    title: "Final (<a href=\"./syllabus/#exams\">Paper</a>, 11:30 AM - 2:30 PM)"
     label: exam
   - date: 2026-01-21
     title: "Lab 1: Prerequisite Coding"

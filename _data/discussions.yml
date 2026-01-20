@@ -24,7 +24,7 @@ discussions:
   - title: "Feature Engineering, Housing"
   - title: "Spring Break"
     nonumber: true
-  - title: "Criss-Validation and Regularization"
+  - title: "Cross-Validation and Regularization"
   - title: "RVs, Bias, and Variance"
   - title: "SQL"
   - title: "Logistic Regression"
