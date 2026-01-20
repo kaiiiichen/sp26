@@ -89,7 +89,7 @@ If you are enrolled in Data 100, you have 2 options:
 - **"No Discussion" Grading Scheme:** Instead, the 5% discussion weight will be redistributed to the assignments category. If you choose this option you will not be assigned to a discussion section.
 
 {: .note }
-> You can switch from the graded discussion option to the non-graded discussion option after the [Pre-Semester Survey TBA](){:target="_blank"} is due (January 22, 2026 at 11:59 PM). You cannot switch from graded to non-graded after February 13, 2026. If you are unable to submit the form on time, we will assume you have opted for the non-graded discussion option.
+> You can switch from the graded discussion option to the non-graded discussion option after the [Pre-Semester Survey](https://forms.gle/pL1Te33T7cddv3wV9){:target="_blank"} is due (January 22, 2026 at 11:59 PM). You cannot switch from graded to non-graded after February 13, 2026. If you are unable to submit the form on time, we will assume you have opted for the non-graded discussion option.
 
 Students are not permitted to switch between the two grading schemes once finalized. However, if you would like to attend discussion at a later point in the semester, please reach out to us privately via Ed, and we may be able to accommodate you.
 
