@@ -129,7 +129,7 @@ There are four exams in this course:
 > - **Paper-Based Midterm 3** ON **Thursday, April 30** (1-hour)
 > - **Paper-Based Final** ON **Thursday, May 14** STARTING AT **11:30am**
 
-We will administers the midterms in a computer-based testing facility on campus. More information will be provided shortly after the semester begins, including instructions for students with DSP accommodations.
+We will administer the first two midterms in a computer-based testing facility on campus. The third midterm and final will be traditional paper-based exams. More information will be provided shortly after the semester begins, including instructions for students with DSP accommodations.
 
 
 ### Graduate Final Project
@@ -170,10 +170,10 @@ Course Communication:
 | Labs | 5% | 5% |  - |  5% | Drop 2 lowest scores |
 | Discussions | 5% | - | - | - | Drop 3 lowest scores |
 | Lecture Participation | 5% | 5% | 5% | 5% | Drop 3 lowest scores |
-| Midterm 1 | 6.66% | 6.66% | 6.66% | - | |
-| Midterm 2 | 6.66% | 6.66% | 6.66% | - | |
-| Midterm 3 | 6.66% | 6.66% | 6.66% | - | |
-| Final | 30% | 30% | 30% | - | |
+| Midterm 1 | 10% | 10% | 10% | - | |
+| Midterm 2 | 10% | 10% | 10% | - | |
+| Midterm 3 | 10% | 10% | 10% | - | |
+| Final | 20% | 20% | 20% | - | |
 | Graduate Final Project| - | - | 15% | 35% | |
 
 **To pass this course, students must achieve a total weighted average percentage of at least 50% across the midterms and final.** This means that even if a student excels in other components of the course, a total weighted average below 50% on these exams will result in a failing grade for the course. 
