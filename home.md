@@ -35,8 +35,12 @@ seo:
 {% assign announcement = site.announcements | last %}
 {{ announcement }}
 
-
-# Schedule
+<h2 class="d-flex align-items-center" id="schedule">
+  Schedule
+  <a href="#week-{{ site.current_week }}" class="btn btn-currentweek" style="font-size: 1rem; margin-left: 1rem;">
+    Jump to Current Week
+  </a>
+</h2>
 
 <div>
 {%- include schedule.html -%}

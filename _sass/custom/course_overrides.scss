@@ -24,3 +24,7 @@
   flex: 0 1 auto;      /* Don't force them to stretch, keep natural size */
   min-width: 200px;    /* Optional: ensures cards don't get too squashed */
 }
+
+.btn-currentweek{
+  @include btn-color($white, #355F41);
+}
