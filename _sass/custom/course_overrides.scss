@@ -12,3 +12,15 @@ table td a {
     min-height: 24px;
     line-height: 1.2;
 }
+
+.instructor-grid {
+  display: flex;       /* Put items side-by-side */
+  flex-wrap: wrap;     /* Allow wrapping to the next line if space runs out */
+  gap: 20px;           /* Space between the cards */
+  justify-content: flex-start; /* Align them to the left */
+}
+
+.staffer-container {
+  flex: 0 1 auto;      /* Don't force them to stretch, keep natural size */
+  min-width: 200px;    /* Optional: ensures cards don't get too squashed */
+}

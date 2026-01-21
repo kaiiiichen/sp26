@@ -9,8 +9,8 @@ seo:
 ---
 
 # Data 100: Principles and Techniques of Data Science
-UC Berkeley, Spring 2026
-{: .mb-0 .fs-6 .text-grey-dk-000 }
+## UC Berkeley, Fall 2025 
+{: .mb-2 .fs-6 .text-grey-dk-000 style="margin-top: 0;"  }
 
 [DataHub](http://data100.datahub.berkeley.edu/){:target="_blank" .btn .btn-datahub .mr-1 }
 [Pensieve](https://www.pensieve.co/){:target="_blank" .btn .btn-pensieve .mr-1 }
@@ -20,20 +20,20 @@ UC Berkeley, Spring 2026
 [Askademia Lecture Recordings](https://www.askademia.org/ds100/sp26){:target="_blank" .btn .btn-lectures .mr-1}
 [YouTube Lecture Recordings](https://www.youtube.com/playlist?list=PLQCcNQgUcDfopoa1txbWmAOIrZyx0XoZ7){:target="_blank" .btn .btn-youtube .mr-1}
 
-<!-- Commented out due to accessibility issues -->
-<!-- <div>
-{% assign instructors = site.staffers | where: 'role', 'Instructor' | sort: 'order' %}
-  <div class="role">
+
+<div>
+  {% assign instructors = site.staffers | where: 'role', 'Instructor' | sort: 'order' %}
+  <div class="role instructor-grid">
     {% for staffer in instructors %}
-    {{ staffer }}
+      <div class="staffer-container">
+        {{ staffer }}
+      </div>
     {% endfor %}
   </div>
-</div> -->
+</div>
 
-<!-- Also causing accessibility issues -->
-<!-- Uncomment if you'd like to use announcements! -->
-<!-- {% assign announcement = site.announcements | last %}
-{{ announcement }} -->
+{% assign announcement = site.announcements | last %}
+{{ announcement }}
 
 
 # Schedule
