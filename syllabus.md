@@ -114,7 +114,7 @@ Please refer to [Grading Scheme](#grading-scheme) for a comprehensive grade brea
 - All lab autograder tests are public (visible).
 - We will not have lab sections for Data 100 this semester. Rather, we'll provide extensive lab support on Ed and accompanying video walkthroughs.
 - All labs are intended to take about an hour.
-- Lab submissions are mandatory.
+- Lab submissions are mandatory (unless you are a Data C200 student).
 - Your two lowest lab scores will be dropped.
 
 
