@@ -22,8 +22,7 @@ labs:
   - skip: true
   - title: "Lab 6: Gradient Descent, sklearn"
   - title: "Lab 7: Model Selection"
-  - title: "Spring Break"
-    nonumber: true
+  - skip: true # spring break
   - title: "Lab 8: Probability"
   - title: "Lab 9: SQL"
   - title: "Lab 10: Logistic Regression"

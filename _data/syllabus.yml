@@ -54,6 +54,7 @@ extra_links_col3:
 # For example, for a summer semester, put ['1', '2', '3', '4'].
 class_days: ['2', '4']
 discussion_days: ['3']
+catch_up_days: ['5']
 lab_days: ['4']
 lab_due_days: ['2']
 hw_days: ['4']
@@ -66,6 +67,7 @@ hw_due_days: ['5']
 # You may not need all of these. 
 starting_lecture_number: '1'
 starting_discussion_number: '1'
+starting_catch_up_number: '1'
 starting_homework_number: '1'
 starting_lab_number: '1'
 starting_project_number: '1'

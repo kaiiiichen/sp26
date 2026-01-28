@@ -27,6 +27,7 @@
   {%- endcomment -%}
   {%- if site.data.syllabus.class_days contains day_of_week or 
     site.data.syllabus.discussion_days contains day_of_week or 
+    site.data.syllabus.catch_up_days contains day_of_week or
     site.data.syllabus.lab_days contains day_of_week or 
     site.data.syllabus.hw_days contains day_of_week or
     site.data.syllabus.hw_due_days contains day_of_week or
@@ -56,12 +57,14 @@
 {%- comment -%} counters {%- endcomment -%}
 {%- assign lecture_index = 0 -%}
 {%- assign discussion_index = 0 -%}
+{%- assign catch_up_index = 0 -%}
 {%- assign lab_index = 0 -%}
 {%- assign homework_index = 0 -%}
 {%- assign homework_due_index = 0 -%}
 {%- assign lab_due_index = 0 -%}
 {%- assign lecture_number = site.data.syllabus.starting_lecture_number | default: 1 -%}
 {%- assign discussion_number = site.data.syllabus.starting_discussion_number | default: 1 -%}
+{%- assign catch_up_number = site.data.syllabus.starting_catch_up_number | default: 1 -%}
 <!-- {%- assign lab_number = site.data.syllabus.starting_lab_number | default: 1 -%} -->
 {%- assign homework_number = site.data.syllabus.starting_homework_number | default: 1 -%}
 {%- assign homework_due_number = site.data.syllabus.starting_homework_number | default: 1 -%}
@@ -222,6 +225,57 @@
 
                     {%- comment -%} 5. ALWAYS INCREMENT INDEX {%- endcomment -%}
                     {%- assign discussion_index = discussion_index | plus: 1 -%}
+                {%- endif -%}
+            {%- endif -%}
+
+            {%- comment -%} --- CATCH-UP LOGIC (Fridays, except the first) --- {%- endcomment -%}
+            {%- if site.data.syllabus.catch_up_days contains day_of_week -%}
+                {%- assign cu_entry = site.data.catch_up.catch_up[catch_up_index] -%}
+                
+                {%- if cu_entry -%}
+                    {%- unless cu_entry.skip -%}
+                        <div class="syllabus-item" style="margin-bottom: 4px;">
+                            {%- assign cu_obj = nil -%}
+
+                            {%- comment -%} 1. FIND THE OBJECT (If slug exists) {%- endcomment -%}
+                            {%- if cu_entry.slug -%}
+                                {%- assign target_slug = cu_entry.slug | append: "" -%}
+                                {%- for c in site.catch_up -%}
+                                    {%- if c.slug == target_slug -%}
+                                        {%- assign cu_obj = c -%}
+                                        {%- break -%}
+                                    {%- endif -%}
+                                {%- endfor -%}
+                            {%- endif -%}
+
+                            {%- comment -%} 2. DETERMINE TITLE AND LINK {%- endcomment -%}
+                            {%- assign display_title = cu_entry.title | default: cu_obj.title -%}
+                            
+                            {%- if cu_entry.link -%}
+                                {%- assign display_link = cu_entry.link -%}
+                            {%- elsif cu_obj -%}
+                                {%- assign display_link = cu_obj.url | relative_url -%}
+                            {%- else -%}
+                                {%- assign display_link = nil -%}
+                            {%- endif -%}
+
+                            {%- comment -%} 3. RENDER LABEL (Unless nonumber is true) {%- endcomment -%}
+                            {%- unless cu_entry.nonumber -%}
+                                <strong class="label label-catch-up">Catch Up {{ catch_up_number }}</strong>
+                                {%- assign catch_up_number = catch_up_number | plus: 1 -%}
+                            {%- endunless -%}
+
+                            {%- comment -%} 4. RENDER LINK OR TITLE {%- endcomment -%}
+                            {%- if display_link -%}
+                                <a href="{{ display_link }}">{{ display_title }}</a>
+                            {%- else -%}
+                                <span>{{ display_title }}</span>
+                            {%- endif -%}
+                        </div>
+                    {%- endunless -%}
+
+                    {%- comment -%} 5. ALWAYS INCREMENT INDEX {%- endcomment -%}
+                    {%- assign catch_up_index = catch_up_index | plus: 1 -%}
                 {%- endif -%}
             {%- endif -%}
 

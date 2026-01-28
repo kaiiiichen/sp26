@@ -146,6 +146,9 @@ collections:
   discussions:
     output: true
     permalink: /:collection/:path/
+  catch_up:
+    output: true
+    permalink: /:collection/:path/
 
 # The sitemap **must** be enabled. It's published as /baseurl/sitemap.xml
 plugins:
@@ -170,6 +173,13 @@ defaults:
       layout: discussion
       nav_exclude: true
       subpath: 'assets/discussions/'
+  - scope:
+      path: ''
+      type: catch_up
+    values:
+      layout: catch_up
+      nav_exclude: true
+      subpath: 'assets/catch_up/'
   - scope:
       path: ''
       type: hw
