@@ -15,6 +15,7 @@
 labs:
   - skip: true # lab 1 on syllabus.yml to shift to W release
   - title: "Lab 2A: Pandas"
+    link: https://data100.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FDS-100%2Fsp26-student&branch=main&urlpath=lab%2Ftree%2Fsp26-student%2Flab%2Flab02A%2Flab02A.ipynb
   - title: "Lab 2B: Data Cleaning, EDA"
   - title: "Lab 3: Regex, EDA"
   - title: "Lab 4: Tranformations"
