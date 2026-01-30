@@ -13,7 +13,7 @@
 # or provides an external link
 catch_up:
   - skip: true # no catch-up on the first Friday
-  - title: "Pandas"
+  - slug: "01" # pandas
   - title: "Data Cleaning, EDA, Regex"
   - title: "Visualizations"
   - title: "Sampling, Modeling, SLR"
