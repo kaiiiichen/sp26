@@ -116,6 +116,8 @@
                         {%- assign label_parts = extra.label | split: "-" -%}
                         {%- if extra.label == "exam-review" -%}
                           Exam Review
+                        {%- elsif extra.label == "exam-prep" -%}
+                          Exam Prep
                         {%- else -%}
                           {{ label_parts[0] | capitalize }}
                         {%- endif -%}
