@@ -33,7 +33,7 @@ lectures:
         link: https://ds100.org/course-notes/pandas-2/
   - slug: "04"
     readings:
-      - title: Note 4 (Fall 2025)
+      - title: Note 4
         link: https://ds100.org/course-notes/pandas-3/
   - slug: "05"
   - slug: "06"
