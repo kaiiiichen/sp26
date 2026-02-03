@@ -43,3 +43,33 @@
   margin-left: 1rem;
   font-family: $body-font-family;
 }
+
+/* Calendar event type toggles */
+.calendar-event-toggles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+
+  .calendar-toggle-label {
+    font-weight: 600;
+    margin-right: 0.25rem;
+  }
+
+  .calendar-toggle-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    user-select: none;
+
+    input[type="checkbox"] {
+      cursor: pointer;
+      width: 1em;
+      height: 1em;
+    }
+  }
+}

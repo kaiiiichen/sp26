@@ -4,6 +4,9 @@
 let GOOGLE_CALENDAR_ID = '{{ site.google_calendar.google_calendar_id }}';
 let EVENT_CONFIG = {{ site.google_calendar.event_types | jsonify }};
 
+// Visibility state for event type toggles (suffix -> visible)
+let eventTypeVisibility = {};
+
 let extend_event = (event, config) => {
   if (config.background_color) {
       event.backgroundColor = `#${config.background_color}`;
@@ -20,17 +23,31 @@ let extend_event = (event, config) => {
 
 let transform_calendar_event = (event) => {
   let title = event.title.trim();
+  event.extendedProps ||= {};
   for (config of EVENT_CONFIG) {
     if (config.prefix && title.startsWith(config.prefix)) {
+      event.extendedProps.eventTypeSuffix = config.prefix;
       return extend_event(event, config);
     }
     if (config.suffix && title.endsWith(config.suffix.trim())) {
+      event.extendedProps.eventTypeSuffix = config.suffix.trim();
       return extend_event(event, config);
     }
   }
-
+  event.extendedProps.eventTypeSuffix = 'Other';
   return event;
 }
+
+let create_event_data_transform = () => {
+  return (event) => {
+    let transformed = transform_calendar_event(event);
+    let suffix = transformed.extendedProps?.eventTypeSuffix;
+    if (suffix !== undefined && eventTypeVisibility[suffix] === false) {
+      return false; // Hide event (FullCalendar requires false, not null)
+    }
+    return transformed;
+  };
+};
 
 /* NOTES / Future Things:
  * Set initial date to start of semester if semester is over.
@@ -38,6 +55,17 @@ let transform_calendar_event = (event) => {
 *
 */
 document.addEventListener('DOMContentLoaded', function() {
+  // Initialize visibility: all event types visible (order: config types first, then Other)
+  let eventTypeLabels = [];
+  for (let config of EVENT_CONFIG) {
+    let label = (config.suffix || config.prefix || '').trim();
+    if (label && !eventTypeLabels.includes(label)) eventTypeLabels.push(label);
+  }
+  eventTypeLabels.push('Other');
+  for (let label of eventTypeLabels) {
+    eventTypeVisibility[label] = true;
+  }
+
   let calendarEl = document.getElementById('full-calendar');
   let calendar = new FullCalendar.Calendar(calendarEl, {
     // plugins: [FullCalendar.TimeGrid, FullCalendar.GoogleCalendar],
@@ -67,11 +95,12 @@ document.addEventListener('DOMContentLoaded', function() {
     eventSources: [
       {
         googleCalendarId: GOOGLE_CALENDAR_ID,
-        eventDataTransform: transform_calendar_event,
+        eventDataTransform: create_event_data_transform(),
       },
       {
         // UC Berkeley Student Services Calendar
         googleCalendarId: 'c_lublpqqigfijlbc1l4rudcpi5s@group.calendar.google.com',
+        eventDataTransform: create_event_data_transform(),
         backgroundColor: '#B3E59A',
         textColor: '#000000',
       },
@@ -119,4 +148,34 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
   calendar.render();
+
+  // Build toggle UI for event types
+  let toggleContainer = document.createElement('div');
+  toggleContainer.id = 'calendar-event-toggles';
+  toggleContainer.className = 'calendar-event-toggles';
+  toggleContainer.setAttribute('role', 'group');
+  toggleContainer.setAttribute('aria-label', 'Filter calendar events by type');
+  let toggleLabel = document.createElement('span');
+  toggleLabel.className = 'calendar-toggle-label';
+  toggleLabel.textContent = 'Show: ';
+  toggleContainer.appendChild(toggleLabel);
+  for (let label of eventTypeLabels) {
+    let wrap = document.createElement('label');
+    wrap.className = 'calendar-toggle-wrap';
+    let cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.checked = true;
+    cb.setAttribute('data-event-type', label);
+    cb.setAttribute('aria-label', `Toggle ${label} events`);
+    cb.addEventListener('change', function() {
+      eventTypeVisibility[label] = this.checked;
+      calendar.refetchEvents();
+    });
+    let span = document.createElement('span');
+    span.textContent = label;
+    wrap.appendChild(cb);
+    wrap.appendChild(span);
+    toggleContainer.appendChild(wrap);
+  }
+  calendarEl.parentNode.insertBefore(toggleContainer, calendarEl);
 });
