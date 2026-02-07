@@ -44,9 +44,13 @@ extra_days_col2:
     label: homework-released
     link: https://data100.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FDS-100%2Fsp26-student&branch=main&urlpath=lab%2Ftree%2Fsp26-student%2Fhw%2Fhw01%2Fhw01.ipynb
   - date: 2026-02-02
-    title: "Exam Prep 1: Pandas"
+    title: "Exam Prep 1: Pandas (Solutions & Walkthrough)"
     label: exam-prep
-    link: https://drive.google.com/file/d/1JMLWsCkTB0bj2Iv2u4qXVC14wJr3fSB-/view?usp=sharing
+    link: https://drive.google.com/file/d/1eWQc2WyvtZxe2QVYeUcZeMMurQi0j9je/view?usp=sharing
+  - date: 2026-02-02
+    title: "Exam Prep 1: Walkthrough Video"
+    label: exam-prep
+    link: https://www.youtube.com/watch?v=Y2c1Fk_gJzI&list=PLQCcNQgUcDfp9alGSVc_anQKPSLA5H2S_&index=3
   - date: 2026-04-27
     title: "PCA and Clustering (Recorded)"
     label: discussion
