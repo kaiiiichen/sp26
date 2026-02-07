@@ -44,13 +44,8 @@ extra_days_col2:
     label: homework-released
     link: https://data100.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FDS-100%2Fsp26-student&branch=main&urlpath=lab%2Ftree%2Fsp26-student%2Fhw%2Fhw01%2Fhw01.ipynb
   - date: 2026-02-02
-    title: "Exam Prep 1: Pandas (Solutions & Walkthrough)"
+    title: "Exam Prep 1: Pandas"
     label: exam-prep
-    link: https://drive.google.com/file/d/1eWQc2WyvtZxe2QVYeUcZeMMurQi0j9je/view?usp=sharing
-  - date: 2026-02-02
-    title: "Exam Prep 1: Walkthrough Video"
-    label: exam-prep
-    link: https://www.youtube.com/watch?v=Y2c1Fk_gJzI&list=PLQCcNQgUcDfp9alGSVc_anQKPSLA5H2S_&index=3
   - date: 2026-04-27
     title: "PCA and Clustering (Recorded)"
     label: discussion
@@ -59,6 +54,12 @@ extra_days_col2:
 # The dates used in extra_links_col3 below must already be included on the calendar 
 # Use this to provide extra links in the third (reading) column
 extra_links_col3:
+  - date: 2026-02-02
+    title: "Solutions"
+    link: https://drive.google.com/file/d/1eWQc2WyvtZxe2QVYeUcZeMMurQi0j9je/view?usp=sharing
+  - date: 2026-02-02
+    title: "Walkthrough"
+    link: https://www.youtube.com/watch?v=Y2c1Fk_gJzI&list=PLQCcNQgUcDfp9alGSVc_anQKPSLA5H2S_&index=3
   # - date: 2026-01-28
   #   title: Mini-Lecture
   #   link: https://youtu.be/qXR-x19KT5w
