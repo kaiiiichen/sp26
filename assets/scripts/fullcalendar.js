@@ -7,6 +7,20 @@ let EVENT_CONFIG = {{ site.google_calendar.event_types | jsonify }};
 // Visibility state for event type toggles (suffix -> visible)
 let eventTypeVisibility = {};
 
+// Display names for toggle buttons (config key -> button label); keys not listed are hidden from toggles
+const TOGGLE_DISPLAY_NAMES = {
+  'Lecture': 'Lecture',
+  'Session': 'Catch-Up',
+  'Instructor Office Hours': 'Instructor Office Hours',
+  'Office Hours': 'Office Hours',
+  'Section': 'Discussion',
+  'Other': 'Other',
+  // 'Tutoring Section' and 'Exam' omitted = no toggle button (events still show by default)
+};
+
+// Order of toggle buttons (config keys)
+const TOGGLE_ORDER = ['Lecture', 'Section', 'Office Hours', 'Instructor Office Hours', 'Session', 'Other'];
+
 let extend_event = (event, config) => {
   if (config.background_color) {
       event.backgroundColor = `#${config.background_color}`;
@@ -149,33 +163,35 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   calendar.render();
 
-  // Build toggle UI for event types
+  // Build button-toggle UI for event types
+  let toggleWrapper = document.createElement('div');
+  toggleWrapper.className = 'calendar-event-toggles-wrapper';
   let toggleContainer = document.createElement('div');
   toggleContainer.id = 'calendar-event-toggles';
   toggleContainer.className = 'calendar-event-toggles';
   toggleContainer.setAttribute('role', 'group');
   toggleContainer.setAttribute('aria-label', 'Filter calendar events by type');
-  let toggleLabel = document.createElement('span');
-  toggleLabel.className = 'calendar-toggle-label';
-  toggleLabel.textContent = 'Show: ';
-  toggleContainer.appendChild(toggleLabel);
-  for (let label of eventTypeLabels) {
-    let wrap = document.createElement('label');
-    wrap.className = 'calendar-toggle-wrap';
-    let cb = document.createElement('input');
-    cb.type = 'checkbox';
-    cb.checked = true;
-    cb.setAttribute('data-event-type', label);
-    cb.setAttribute('aria-label', `Toggle ${label} events`);
-    cb.addEventListener('change', function() {
-      eventTypeVisibility[label] = this.checked;
+  let eventTypeLabelSet = new Set(eventTypeLabels);
+  for (let label of TOGGLE_ORDER) {
+    if (!eventTypeLabelSet.has(label)) continue;
+    let displayName = TOGGLE_DISPLAY_NAMES[label];
+    if (displayName === undefined) continue; // no toggle for this type (e.g. Tutoring Section, Exam)
+    let btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'calendar-toggle-btn active';
+    btn.setAttribute('data-event-type', label);
+    btn.setAttribute('aria-label', `Toggle ${displayName} events`);
+    btn.setAttribute('aria-pressed', 'true');
+    btn.textContent = displayName;
+    btn.addEventListener('click', function() {
+      let active = eventTypeVisibility[label];
+      eventTypeVisibility[label] = !active;
+      this.classList.toggle('active', eventTypeVisibility[label]);
+      this.setAttribute('aria-pressed', String(eventTypeVisibility[label]));
       calendar.refetchEvents();
     });
-    let span = document.createElement('span');
-    span.textContent = label;
-    wrap.appendChild(cb);
-    wrap.appendChild(span);
-    toggleContainer.appendChild(wrap);
+    toggleContainer.appendChild(btn);
   }
-  calendarEl.parentNode.insertBefore(toggleContainer, calendarEl);
+  toggleWrapper.appendChild(toggleContainer);
+  calendarEl.parentNode.insertBefore(toggleWrapper, calendarEl);
 });
