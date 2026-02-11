@@ -64,22 +64,24 @@
   .calendar-toggle-btn {
     padding: 0.4rem 0.75rem;
     border: none;
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
 
     &:first-child {
       border-left: none;
     }
-    background: var(--fc-button-bg-color, #2c3e50);
-    color: var(--fc-button-text-color, #fff);
+    /* Non-selected: light background */
+    background: #e8eaed;
+    color: #3c4043;
     cursor: pointer;
     font: inherit;
     font-weight: 500;
     transition: background 0.15s, color 0.15s;
 
-    &:hover {
-      background: var(--fc-button-hover-bg-color, #1e2b37);
+    &:hover:not(.active) {
+      background: #dadce0;
     }
 
+    /* Selected: dark to match week/day toggles */
     &.active {
       background: var(--fc-button-active-bg-color, #1a252f);
       color: var(--fc-button-text-color, #fff);
