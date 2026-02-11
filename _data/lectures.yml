@@ -44,6 +44,9 @@ lectures:
       - title: Note 6
         link: https://ds100.org/course-notes/regex/
   - slug: "07"
+    readings:
+      - title: Note 7 (Fall 2025)
+        link: https://ds100.org/course-notes/visualization-1/
   - slug: "08"
   - slug: "09"
   - slug: "10"
