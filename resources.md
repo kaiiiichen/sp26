@@ -66,12 +66,12 @@ Textbook readings are purely optional, and may contain material that is not in s
 <a name = 'course_website'></a>
 ## Course Website
 
-We will be posting all lecture materials on the course syllabus. In addition, they will also be listed in the following publicly visible [GitHub repository](https://github.com/DS-100/sp26-student).
+We will be posting all lecture materials on the course syllabus. In addition, they will also be listed in the following publicly visible [GitHub repository](https://github.com/DS-100/{{ site.baseurl | remove: '/' }}-student).
 
 You can send us changes to the course website by
 [forking](https://help.github.com/articles/fork-a-repo/) and sending a [pull
 request](https://help.github.com/articles/about-pull-requests/) to the course
-website [GitHub repository](https://github.com/DS-100/sp26). You will then
+website [GitHub repository](https://github.com/DS-100/{{ site.baseurl | remove: '/' }}). You will then
 become part of the history of Data 100 at Berkeley.
 
 ## Coding and Mathematics Resources
